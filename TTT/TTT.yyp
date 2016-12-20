@@ -1728,9 +1728,124 @@
                 "resourcePath": "objects\\oLightSource\\oLightSource.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "214cff70-ce03-4adc-9815-070dd5d9c718",
+            "Value": {
+                "id": "2a610279-dc8a-444c-93d7-a803fb7ae0be",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\\r_main\\r_main.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "37d21f20-1b62-49e0-a121-eba6c6ae668d",
+            "Value": {
+                "id": "41014ad6-daea-4872-b44b-e8dcaa43025b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprite_13\\sprite_13.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "874434ea-5f49-4acd-848d-174db20b530a",
+            "Value": {
+                "id": "8cd9ae2a-f9e5-4e7f-a0d6-af0f0febbbfa",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\obj_room\\obj_room.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fd7b3c48-ae73-47ae-9c44-92100474dc53",
+            "Value": {
+                "id": "d9c925e3-f45a-4433-b4e4-3b3beb9bac96",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\spr_slime_strip2\\spr_slime_strip2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "953c84ed-088f-4d32-94ba-b12e73bb6c64",
+            "Value": {
+                "id": "875c4235-1399-4f46-993e-38a86ff3af36",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\obj_enemy_slime\\obj_enemy_slime.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6f988159-245f-43e5-999d-bc4dfc9f108f",
+            "Value": {
+                "id": "bdab86ad-225a-4eef-994f-7aa9bcbb5742",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\o_player_1\\o_player_1.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "room_order": [
+        "214cff70-ce03-4adc-9815-070dd5d9c718",
         "305a4eec-0584-4964-b3e6-18e61650fefa"
     ],
     "script_order": [

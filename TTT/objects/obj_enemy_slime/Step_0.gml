@@ -1,11 +1,11 @@
 /// @desc Move the Player
 
 // Enable platform movement actions
-enable_movement_platform_actions(.5, 4, 12, keyboard_check(ord("D")), keyboard_check(ord("A")), keyboard_check_pressed(ord("W")), keyboard_check_released(ord("S")));
+enable_movement_platform_actions(.5, 4, 12, 0, 0, 0, 0);
 
 // This script might not work for every kind of sprite set but it will work for a basic
 // set and will show how you could get started if you want to add more
-enable_movement_platform_sprites(s_player_idle, s_player_walk, s_player_jump, .25);
+//enable_movement_platform_sprites(s_player_idle, s_player_walk, s_player_jump, .25);
 
 // Move the entity
 move_movement_entity();
