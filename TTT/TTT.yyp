@@ -1763,7 +1763,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\\sprite_13\\sprite_13.yy",
+                "resourcePath": "sprites\\spr_backwall\\spr_backwall.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1840,6 +1840,44 @@
                     "default"
                 ],
                 "resourcePath": "objects\\o_player_1\\o_player_1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "427e458c-9e35-40dd-a7a0-6d374cc8600b",
+            "Value": {
+                "id": "81eba271-6bc3-4bc7-a601-455877194f14",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\spr_bullet\\spr_bullet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6cffb7f9-baa7-4521-b531-06a217c64509",
+            "Value": {
+                "id": "e1cfcaa2-4100-4be5-a584-829dc00257b7",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\obj_bullet\\obj_bullet.yy",
                 "resourceType": "GMObject"
             }
         }

@@ -10,3 +10,8 @@ enable_movement_platform_sprites(s_player_idle, s_player_walk, s_player_jump, .2
 // Move the entity
 move_movement_entity();
 
+if(mouse_check_button_pressed(mb_left)) {
+	blt=instance_create_layer(x,y,"Objects",obj_bullet);
+	blt.image_angle=image_angle;
+	blt.speed=10; //this only goes right... sigh...
+}
