@@ -1,17 +1,7 @@
-/// @desc Move the Player
+/// @desc Possible player spawns
 
-// Enable platform movement actions
-enable_movement_platform_actions(.5, 4, 12, keyboard_check(vk_right), keyboard_check(vk_left), keyboard_check_pressed(vk_up), keyboard_check_released(vk_down));
-
-// This script might not work for every kind of sprite set but it will work for a basic
-// set and will show how you could get started if you want to add more
-enable_movement_platform_sprites(s_player_idle, s_player_walk, s_player_jump, .25);
-
-// Move the entity
-move_movement_entity();
-
-if(mouse_check_button_pressed(mb_left)) {
-	blt=instance_create_layer(x,y,"Objects",obj_bullet);
-	blt.image_angle=image_angle;
-	blt.speed=10; //this only goes right... sigh...
-}
+draw_set_halign(fa_center);
+draw_text(room_widht/5,100,"Press \"Q\" to activate player WASD-Q");
+draw_text(room_widht*2/5,100,"Press \"RIGHT-CTRL\" to activate player ARROWKEYS-CTRL");
+draw_text(room_widht*3/5,100,"Press \"Numpad 7\" to activate player Numpad8456-7");
+draw_text(room_widht*4/5,100,"Press \"Gamepad A\" to activate player DPAD-A");
