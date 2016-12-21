@@ -8,6 +8,7 @@ if(p1==noone) {
     if(keyboard_check_pressed(ord("Q"))) {
         p1=instance_create_layer(x,y,"Objects",obj_player);
         p1.color=c_red;
+        p1.control="Q";
         p1choosing=true;
     }
 } else {
@@ -23,7 +24,8 @@ if(p2==noone) {
     draw_text(room_widht*2/5,100,"Press \"RIGHT-CTRL\" to activate player ARROWKEYS-CTRL");
     if(keyboard_check_pressed(vk_control)) {
         p2=instance_create_layer(x,y,"Objects",obj_player);
-        p2.color=c_red;
+        p2.color=c_blue;
+        p2.control="CTRL";
         p2choosing=true;
     }
 } else {
@@ -39,7 +41,8 @@ if(p3==noone) {
     draw_text(room_widht*3/5,100,"Press \"Numpad 7\" to activate player Numpad8456-7");
     if(keyboard_check_pressed(numpad7)) {
         p3=instance_create_layer(x,y,"Objects",obj_player);
-        p3.color=c_red;
+        p3.color=c_yellow;
+        p3.control="7";
         p3choosing=true;
     }
 } else {
@@ -55,7 +58,8 @@ if(p4==noone) {
     draw_text(room_widht*4/5,100,"Press \"Gamepad A\" to activate player DPAD-A");
     if(keyboard_check_pressed(gamepad)) {
         p4=instance_create_layer(x,y,"Objects",obj_player);
-        p4.color=c_red;
+        p4.color=c_green;
+        p4.control="DPAD";
         p4choosing=true;
     }
 } else {
