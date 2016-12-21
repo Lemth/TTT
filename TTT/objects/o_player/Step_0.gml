@@ -1,5 +1,7 @@
 /// @desc Move the Player
 
+if(ready==true) {
+
 switch(control) {
     
   case "Q":
@@ -18,25 +20,25 @@ switch(control) {
     down=keyboard_check(vk_down);
     jump=keyboard_check_pressed(vk_up);
     duck=keyboard_check_released(vk_down);
-    shoot=keyboard_check_pressed(vk_control)+keyboard_check_pressed(vk_shift);    
+    shoot=keyboard_check_pressed(vk_rcontrol)+keyboard_check_pressed(vk_rshift);    
   break;
   case "7":
-    right=keyboard_check(numpad6);
-    left=keyboard_check(numpad4);
-    up=keyboard_check(numpad8);
-    down=keyboard_check(numpad5);
-    jump=keyboard_check_pressed(numpad8);
-    duck=keyboard_check_released(numpad5);
-    shoot=keyboard_check_pressed(numpad7)+keyboard_check_pressed(numpad9);    
+    right=keyboard_check(vk_numpad6);
+    left=keyboard_check(vk_numpad4);
+    up=keyboard_check(vk_numpad8);
+    down=keyboard_check(vk_numpad5);
+    jump=keyboard_check_pressed(vk_numpad8);
+    duck=keyboard_check_released(vk_numpad5);
+    shoot=keyboard_check_pressed(vk_numpad7)+keyboard_check_pressed(vk_numpad9);    
   break;
   case "DPAD":
-    right=keyboard_check(ord("D"));
-    left=keyboard_check(ord("A"));
-    up=keyboard_check(ord("W"));
-    down=keyboard_check(ord("S"));
-    jump=keyboard_check_pressed(ord("W"));
-    duck=keyboard_check_released(ord("S"));
-    shoot=keyboard_check_pressed(ord("Q"))+keyboard_check_pressed(ord("E"));
+    right=gamepad_button_check(0,gp_padr);
+    left=gamepad_button_check(0,gp_padl);
+    up=gamepad_button_check(0,gp_padu);
+    down=gamepad_button_check(0,gp_padd);
+    jump=gamepad_button_check_pressed(0,gp_padu);
+    duck=gamepad_button_check_released(0,gp_padd);
+    shoot=gamepad_button_check_pressed(0,gp_face1)+gamepad_button_check_pressed(0,gp_face2);
   break;
   default:
     right=0;
@@ -62,6 +64,7 @@ enable_movement_platform_sprites(s_player_idle, s_player_walk, s_player_jump, .2
 move_movement_entity();
 
 if(shoot) {
-    var dir=get_direction(0,0,right-left,down-up);
+    var dir=point_direction(0,0,right-left,down-up);
 }
 
+}

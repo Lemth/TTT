@@ -10,3 +10,5 @@ p1choosing=false;
 p2choosing=false;
 p3choosing=false;
 p4choosing=false;
+
+countdown=false;

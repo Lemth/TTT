@@ -36,7 +36,6 @@
         "a3de578e-b2b6-478d-82dc-f6fd074003c8",
         "77cf497f-7ae5-4b9b-9394-12a443c50b7d",
         "8e863f8a-e55e-4019-a064-2108ecfd970c",
-        "4f030038-24fb-4f89-8ebd-e758c1b7cf5e",
         "d00cfb50-d725-4fa6-a898-d165058f3e66",
         "912caf47-c573-471f-9053-2abc47a0991e",
         "76ccfd19-d629-4a9b-be6e-e89ae8f3f809",
@@ -71,30 +70,6 @@
             "visible": true,
             "instances": [
                 {
-                    "id": "4f030038-24fb-4f89-8ebd-e758c1b7cf5e",
-                    "modelName": "GMRInstance",
-                    "mvc": "1.0",
-                    "ignore": false,
-                    "inheritItemSettings": false,
-                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
-                    "m_serialiseFrozen": false,
-                    "name": "inst_10564ED",
-                    "x": 96,
-                    "y": 672,
-                    "IsDnD": false,
-                    "colour": {
-                        "Value": 4294967295
-                    },
-                    "creationCodeFile": "",
-                    "creationCodeType": "",
-                    "inheritCode": false,
-                    "name_with_no_file_rename": "inst_10564ED",
-                    "objId": "042a5e5f-1d79-4052-bb95-b133e4506a94",
-                    "rotation": 0,
-                    "scaleX": 1,
-                    "scaleY": 1
-                },
-                {
                     "id": "f6da5a80-1171-4a2e-b533-1b2bce6d210f",
                     "modelName": "GMRInstance",
                     "mvc": "1.0",
@@ -103,8 +78,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_17112BC5",
-                    "x": 1856,
-                    "y": 672,
+                    "x": 928,
+                    "y": 96,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
