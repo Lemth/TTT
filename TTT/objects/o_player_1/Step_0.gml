@@ -8,12 +8,13 @@ if(p1==noone) {
     if(keyboard_check_pressed(ord("Q"))) {
         p1=instance_create_layer(x,y,"Objects",obj_player);
         p1.color=c_red;
+        p1choosing=true;
     }
 } else {
-    if(p1.ready==false) {
+    if(p1choosing==true) {
         draw_text(room_widht/5,100,"Press \"Q\" to READY player WASD-Q");
         if(keyboard_check_pressed(ord("Q"))) {
-            p1.ready=true;
+            p1choosing=false;
         }
     }
 }
@@ -21,14 +22,15 @@ if(p1==noone) {
 if(p2==noone) {
     draw_text(room_widht*2/5,100,"Press \"RIGHT-CTRL\" to activate player ARROWKEYS-CTRL");
     if(keyboard_check_pressed(vk_control)) {
-        p1=instance_create_layer(x,y,"Objects",obj_player);
-        p1.color=c_red;
+        p2=instance_create_layer(x,y,"Objects",obj_player);
+        p2.color=c_red;
+        p2choosing=true;
     }
 } else {
-    if(p2.ready==false) {
+    if(p2choosing==true) {
         draw_text(room_widht*2/5,100,"Press \"RIGHT-CTRL\" to READY player ARROWKEYS-CTRL");
         if(keyboard_check_pressed(vk_control)) {
-            p2.ready=true;
+            p2choosing=false;
         }
     }    
 }
@@ -36,14 +38,15 @@ if(p2==noone) {
 if(p3==noone) {
     draw_text(room_widht*3/5,100,"Press \"Numpad 7\" to activate player Numpad8456-7");
     if(keyboard_check_pressed(numpad7)) {
-        p1=instance_create_layer(x,y,"Objects",obj_player);
-        p1.color=c_red;
+        p3=instance_create_layer(x,y,"Objects",obj_player);
+        p3.color=c_red;
+        p3choosing=true;
     }
 } else {
-    if(p3.ready==false) {
+    if(p3choosing==true) {
         draw_text(room_widht*3/5,100,"Press \"Numpad 7\" to READY player Numpad8456-7");
         if(keyboard_check_pressed(numpad7)) {
-            p3.ready=true;
+            p3choosing=false;
         }
     }    
 }
@@ -51,18 +54,34 @@ if(p3==noone) {
 if(p4==noone) {
     draw_text(room_widht*4/5,100,"Press \"Gamepad A\" to activate player DPAD-A");
     if(keyboard_check_pressed(gamepad)) {
-        p1=instance_create_layer(x,y,"Objects",obj_player);
-        p1.color=c_red;
+        p4=instance_create_layer(x,y,"Objects",obj_player);
+        p4.color=c_red;
+        p4choosing=true;
     }
 } else {
-    if(p4.ready==false) {
+    if(p4choosing==true) {
         draw_text(room_widht*4/5,100,"Press \"Gamepad A\" to READY player DPAD-A");
         if(keyboard_check_pressed(gamepad)) {
-            p4.ready=true;
+            p4choosing=false;
         }
     }    
 }
 
+// GAME START IF ALL READY AND AT LEAST ONE PICKED
+if(p1!=noone || p2!=noone || p3!=noone || p4!=noone) {
+   if(p1choosing==false && p1choosing==false && p1choosing==false && p1choosing==false) {
+       if(p1!=noone) { p1.ready=true; }
+       if(p2!=noone) { p2.ready=true; }
+       if(p3!=noone) { p3.ready=true; }
+       if(p4!=noone) { p4.ready=true; }
+       alarm[0]=room_speed*3; // 3 seconds countdown
+   }
+}
 
+if(alarm[0]>0) {
+    draw_text(room_width/2,room_height/2,string(round(alarm[0]/room_speed)));
+}
 
+//alarm[0]
+instance_destroy();
 
