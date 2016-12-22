@@ -9,6 +9,9 @@ if(p1==noone) {
         p1=instance_create_layer(x,y,"Objects",o_player);
         p1.color=c_red;
         p1.control="Q";
+	    p1.x=room_width/4;
+	    p1.y=100;
+	    p1.visible=false;
         p1choosing=true;
     }
 } else {
@@ -29,6 +32,9 @@ if(p2==noone) {
         p2=instance_create_layer(x,y,"Objects",o_player);
         p2.color=c_blue;
         p2.control="CTRL";
+	    p2.x=room_width/4;
+	    p2.y=100+room_height*3/4;
+	    p2.visible=false;
         p2choosing=true;
     }
 } else {
@@ -49,6 +55,9 @@ if(p3==noone) {
         p3=instance_create_layer(x,y,"Objects",o_player);
         p3.color=c_yellow;
         p3.control="7";
+	    p3.x=room_width*3/4;
+	    p3.y=100+room_height*3/4;
+	    p3.visible=false;
         p3choosing=true;
     }
 } else {
@@ -69,6 +78,9 @@ if(p4==noone) {
         p4=instance_create_layer(x,y,"Objects",o_player);
         p4.color=c_green;
         p4.control="DPAD";
+	    p3.x=room_width*3/4;
+	    p3.y=100;
+	    p3.visible=false;
         p4choosing=true;
     }
 } else {
