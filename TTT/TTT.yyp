@@ -1880,6 +1880,25 @@
                 "resourcePath": "objects\\obj_bullet\\obj_bullet.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "f10a5eb9-393e-41fa-a70a-6ff5f9d55172",
+            "Value": {
+                "id": "6973cc6c-2afc-4720-99f1-c05eb15a8493",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\obj_control\\obj_control.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "room_order": [
