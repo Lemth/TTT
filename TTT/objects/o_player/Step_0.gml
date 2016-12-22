@@ -65,7 +65,7 @@ move_movement_entity();
 
 if(shoot) {
     var dir=point_direction(0,0,right-left,down-up);
-    bullet=instance_create_layer(x+sprite_width/2,y+sprite_height/2,"Objects",obj_bullet);
+    bullet=instance_create_layer(x+sprite_width/2,y,"Objects",obj_bullet);
     bullet.direction=dir;
     bullet.speed=10;
 }

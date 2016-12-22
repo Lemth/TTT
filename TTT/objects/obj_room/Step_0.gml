@@ -34,9 +34,3 @@ if (image_index==0) {
 }
 */
 
-// DRAW EVENT
-draw_set_color(color);
-
-draw_self();
-
-draw_set_color(c_white);

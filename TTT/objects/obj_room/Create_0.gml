@@ -16,3 +16,5 @@ m3.x=x+random(spwide);
 m1.parnt=self;
 m2.parnt=self;
 m3.parnt=self;
+
+color=c_white;
