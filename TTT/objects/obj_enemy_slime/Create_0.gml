@@ -3,6 +3,8 @@
 
 image_speed=0.1;
 
+parnt=noone;
+
 /// @desc Initialize the player
 initialize_movement_entity(.5, .5, 0, 0, o_solid);
 
