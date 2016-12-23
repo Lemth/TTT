@@ -5,3 +5,5 @@
 other.x=other.spawnx;
 other.y=other.spawny;
 other.died=true;
+
+instance_destroy();
