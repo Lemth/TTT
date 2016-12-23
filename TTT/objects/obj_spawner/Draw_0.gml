@@ -1,7 +1,7 @@
 /// @desc Possible player spawns
 
 draw_set_halign(fa_center);
-
+draw_set_color(c_black);
 // PLAYER 1
 if(p1==noone) {
     draw_text(room_width/5,100,"Press \"Q\" to activate player WASD-Q");
@@ -19,7 +19,7 @@ if(p1==noone) {
         draw_text(room_width/5,100,"Press \"Q\" to READY player WASD-Q");
 	draw_set_color(c_red);
 	draw_sprite(s_player_idle,0,room_width/5,150);
-	draw_set_color(c_white);
+	draw_set_color(c_black);
         if(keyboard_check_pressed(ord("Q"))) {
             p1choosing=false;
         }
@@ -42,7 +42,7 @@ if(p2==noone) {
         draw_text(room_width/5,100+room_height/3,"Press \"RIGHT-CTRL\" to READY player ARROWKEYS-CTRL");
 	draw_set_color(c_blue);
 	draw_sprite(s_player_idle,0,room_width/5,150+room_height/3);
-	draw_set_color(c_white);
+	draw_set_color(c_black);
         if(keyboard_check_pressed(vk_rcontrol)) {
             p2choosing=false;
         }
@@ -65,7 +65,7 @@ if(p3==noone) {
         draw_text(room_width*4/5,100+room_height/3,"Press \"Numpad 7\" to READY player Numpad8456-7");
 	draw_set_color(c_yellow);
 	draw_sprite(s_player_idle,0,room_width*4/5,150+room_height/3);
-	draw_set_color(c_white);
+	draw_set_color(c_black);
         if(keyboard_check_pressed(vk_numpad7)) {
             p3choosing=false;
         }
@@ -88,7 +88,7 @@ if(p4==noone) {
         draw_text(room_width*4/5,100,"Press \"Gamepad A\" to READY player DPAD-A");
 	draw_set_color(c_green);
 	draw_sprite(s_player_idle,0,room_width*4/5,150);
-	draw_set_color(c_white);
+	draw_set_color(c_black);
         if(gamepad_button_check_pressed(0,gp_face1)) {
             p4choosing=false;
         }
@@ -112,3 +112,4 @@ if(alarm[0]>0) {
 
 
 
+draw_set_color(c_white);
