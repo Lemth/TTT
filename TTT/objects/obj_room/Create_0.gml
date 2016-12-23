@@ -18,3 +18,7 @@ m2.parnt=self;
 m3.parnt=self;
 
 color=c_white;
+
+//values to overwrite in creation code:
+xx=0; //1-3
+yy=0; //1-3
