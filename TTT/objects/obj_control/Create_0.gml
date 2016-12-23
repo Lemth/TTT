@@ -4,3 +4,5 @@
 // ADD THIS GUY TO THE ROOM!
 init=true;
 grid[0,0]=0;
+winning=false;
+color=0;
