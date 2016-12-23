@@ -5,3 +5,7 @@ color=c_white;
 control="NONE";
 
 ready=false;
+
+died=false;
+spawnx=x;
+spawny=y;
