@@ -64,7 +64,7 @@ enable_movement_platform_sprites(s_player_idle, s_player_walk, s_player_jump, .2
 move_movement_entity();
 
 if(shoot) {
-    var dir=point_direction(0,0,right-left,down-up);
+    var dir=point_direction(0,0,image_xscale,down-up);
     bullet=instance_create_layer(x+sprite_width/2,y,"Objects",obj_bullet);
     bullet.direction=dir;
     bullet.speed=10;
